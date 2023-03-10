@@ -1,0 +1,9 @@
+domain: rafaelmattos.com
+layout:
+- go.kubebuilder.io/v4-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: my-kubernetes-operator
+repo: github.com/rafaelDev0ps/my-kubernetes-operator
+version: "3"
