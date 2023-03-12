@@ -53,14 +53,14 @@ func (r *MemcachedReconciler) Reconcile(ctx context.Context, req ctrl.Request) (
 	_ = log.FromContext(ctx)
 
 	// TODO(user): your logic here
-  memcached := &cachev1alpha1.Memcached{}
-  err := r.Get(ctx, req.NamespacedName, memcached)
+	memcached := &cachev1alpha1.Memcached{}
+	err := r.Get(ctx, req.NamespacedName, memcached)
 
-  if err != nil {
-    return ctrl.Result{}, err
-  }
+	if err != nil {
+		return ctrl.Result{}, err
+	}
 
-  return ctrl.Result{Requeue: true}, nil
+	return ctrl.Result{Requeue: true}, nil
 }
 
 // SetupWithManager sets up the controller with the Manager.

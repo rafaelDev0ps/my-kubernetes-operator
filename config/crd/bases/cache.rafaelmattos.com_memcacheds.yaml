@@ -41,9 +41,6 @@ spec:
               size:
                 format: int32
                 type: integer
-            required:
-            - containerPort
-            - size
             type: object
           status:
             description: MemcachedStatus defines the observed state of Memcached
