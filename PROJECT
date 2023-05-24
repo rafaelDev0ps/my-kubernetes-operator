@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: my-kubernetes-operator
 repo: rafaelmattos.dev/my-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: rafaelmattos.dev
+  group: batch
+  kind: CronJob
+  path: rafaelmattos.dev/my-operator/api/v1
+  version: v1
 version: "3"
